@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Swati - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+</head>
+<body>
+
+  <header>
+    <img src="./profilepic.jfif" alt="Swati" class="profilepic">
+    <h1>Swati</h1>
+    <p>A Developer , A Student !!!</p>
+   
+  
+</header>
+
+    <section id="about">
+       
+        
+        <h2 data-aos="fade-right"> Hello There 🙋‍♀️I am Swati</h2>
+        <div data-aos="fade-right">
+          <p>
+            A final year student pursuing B.E. Information & Technology at
+            DYPCOE,Akurdi. I am currently exploring and learning technologies
+            in fullstack development and practicing DSA along the way.I'm
+            looking for working opportunities in web domain. I am willing to
+            learn new technologies. Apart from coding,I have interest in music
+            and travelling. Thanks for sparing your time knowing me, you can
+            have a look upon my works in following sections
+          </p>
+        </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+  
+      <div class="ski">
+          <!-- Web Development Skills -->
+          <div class="sk" data-aos="fade-up">
+              <ul>
+                  <li><h3>Web Development</h3></li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>React.js</li>
+                  <li>Node.js</li>
+                  <li>Express.js</li>
+              </ul>
+          </div>
+  
+          <!-- Programming Languages -->
+          <div class="sk" data-aos="fade-up" data-aos-delay="200">
+              <ul>
+                  <li><h3>Languages</h3></li>
+                  <li>C++</li>
+                  <li>Java</li>
+                  <li>Python (Basic)</li>
+              </ul>
+          </div>
+  
+          <!-- Designing Skills -->
+          <div class="sk" data-aos="fade-up" data-aos-delay="400">
+              <ul>
+                  <li><h3>Designing</h3></li>
+                  <li>Graphic Designing</li>
+                  <li>UI/UX Designing</li>
+                  <li>Canva</li>
+              </ul>
+          </div>
+  
+          <!-- Soft Skills -->
+          <div class="sk" data-aos="fade-up" data-aos-delay="600">
+              <ul>
+                  <li><h3>Other</h3></li>
+                  <li>Aptitude</li>
+                  <li>Problem Solving</li>
+                  <li>Communication</li>
+              </ul>
+          </div>
+  
+          <!-- MERN Stack -->
+          <div class="sk" data-aos="fade-up" data-aos-delay="800">
+              <ul>
+                  <li><h3>MERN Stack</h3></li>
+                  <li>MongoDB</li>
+                  <li>Express.js</li>
+                  <li>React.js</li>
+                  <li>Node.js</li>
+                  <li>Redis</li>
+              </ul>
+          </div>
+      </div>
+  </section>
+  
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+        <div class="grid-container" id="project-container">
+            <!-- Projects will be dynamically inserted here -->
+        </div>
+    </div>
+</section>
+
+    <section id="resume" data-aos="fade-up" data-aos-delay="200">
+        <h2>Resume</h2>
+        <p class="rc">Download my resume <a href="https://drive.google.com/file/d/1WBw0kWA2A3FGw-MkJXfK9LqhjEqVROSQ/view?usp=sharing" target="_blank" rel="noopener noreferrer">here</a>.</p>
+    </section>
+    <section id="contact" data-aos="fade-up" data-aos-delay="200">
+      <h2>Contact</h2>
+      <div class="rc">
+          <p>Email: <a href="mailto:swati2003mry@gmail.com"><i class="fas fa-envelope"></i> swati2003mry@gmail.com</a></p>
+          <p>Phone: <i class="fas fa-phone-alt"></i> +91 6395954876</p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/swatimry" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> Swati</a></p>
+          <p>Instagram: <a href="https://www.instagram.com/swaarthii/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> @swatimry</a></p>
+      
+          <p>LeetCode: <a href="https://leetcode.com/swatimry/" target="_blank" rel="noopener noreferrer"><i class="fab fa-leetcode"></i> swatimry</a></p>
+          
+        
+        
+        </div>
+      
+  </section>
+
+    <footer>
+        <p>&copy;Swati. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</body>
+<script>
+  AOS.init({
+    duration: 1200, // Animation duration in milliseconds
+    easing: 'ease-in-out', // Easing function for animation
+    once: true // Whether the animation should happen only once
+  });
+  const projects = [
+        {
+            id: 1,
+            name: "React Chat App",
+            img: "./images/chatapp.png",
+            github: "https://github.com/swatimry/chat-frontend",
+            desc: "This is a Chatroom built using React and socket.io. It allows users to create different chatrooms and join with a custom name. Event notifications of users joining and leaving chatrooms are popped up periodically."
+        },
+        {
+            id: 2,
+            name: "Brewery-Ecommerce",
+            img: "./images/brewery.png",
+            github: "https://github.com/swatimry/brewery-backend",
+            desc: "Brewery is an e-commerce website providing a fully functional site for a Coffee shop with frontend made using React and a responsive UI, with a custom backend in JavaScript. Features include Cart, Google Authentication, Payment Integration with Razorpay, and an Admin Dashboard."
+        },
+        {
+            id: 3,
+            name: "Portfolio",
+            img: "./images/portf.png",
+            github: "https://github.com/swatimry/react-portfolio",
+            desc: "A personal Portfolio website to showcase work experiences and projects done, reflecting all about educational and technical background built using React."
+        },
+       
+        
+        {
+            id: 4,
+            name: "Simon Game",
+            img: "./images/simon.png",
+            github: "https://github.com/swatimry/Simon-game",
+            desc: "Simon Game is a simple game that tests the user's memory. It is one of my earliest projects in web development."
+        },
+        {
+            id: 5,
+            name: "TO-DO List",
+            img: "./images/todo.png",
+            github: "https://github.com/swatimry/Todolist-project",
+            desc: "The TO-DO List project helped me understand the basics of APIs in JavaScript. It allows users to create custom lists for different tasks and check off completed tasks."
+        }
+    ];
+
+    // Function to generate HTML for each project
+    const generateProjects = () => {
+        const projectContainer = document.getElementById('project-container');
+        projects.forEach(project => {
+            const projectElement = document.createElement('div');
+            projectElement.classList.add('proj');
+
+            projectElement.innerHTML = `
+                <h3>${project.name}</h3>
+                <p>${project.desc}</p>
+                <p>
+                    <a href="${project.github}" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                </p>
+            `;
+
+            projectContainer.appendChild(projectElement);
+        });
+    };
+   
+    window.onload = generateProjects;
+   
+</script>
+</html>
